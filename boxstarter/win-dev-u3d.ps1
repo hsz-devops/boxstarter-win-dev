@@ -84,7 +84,7 @@ cinst dotnet4.5.1
 
 # ====================================================================================================
 # VM and infra
-cinst virtualbox  # -version 4.x.xx
+cinst virtualbox  
 cinst virtualbox.extensionpack
 cinst vboxheadlesstray
 cinst vagrant
@@ -103,7 +103,8 @@ if (Test-PendingReboot) { Invoke-Reboot }
 cinst vs2013.4
 if (Test-PendingReboot) { Invoke-Reboot }
 
-cinst DotNet3.5 # Not automatically installed with VS 2013. Includes .NET 2.0. Uses Windows Features to install.
+cinst DotNet3.5 
+# Not automatically installed with VS 2013. Includes .NET 2.0. Uses Windows Features to install.
 if (Test-PendingReboot) { Invoke-Reboot }
 
 # Install Visual Studio 2013 addons
